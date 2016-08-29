@@ -13,8 +13,6 @@ jQuery(function($) {
     }
   };
 
-  hide_divs();
-
   $('#atm-ucla').click(function(e) {
     e.preventDefault();
     hide_divs();
