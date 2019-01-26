@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif|Open+Sans');
 /* reset */
 
 * {
@@ -14,7 +14,7 @@ html {
 }
 
 body {
-	font-family: 'Merriweather', Helvetica, Arial, sans-serif;
+	font-family: 'Noto Serif', Times, Times New Roman, Georgia, serif;
 	padding: 0rem;
 	margin: 0 auto;
 	width: 100%;
@@ -24,9 +24,28 @@ body {
 }
 
 header {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	display: block;
 	padding: 1.3rem 0;
+	padding: 1.3rem 0 0;
 	border-bottom: .07em solid #eee;
+	height: 3em;
+}
+
+header .title {
+	font-weight: bold;
+	font-size: 2em;
+	float: left;
+}
+
+header .nav-bar {
+	line-height: 2em;
+	font-size: 1.6em;
+	float: right;
+}
+
+header .nav-link {
+	color: #777;
 }
 
 @media all {

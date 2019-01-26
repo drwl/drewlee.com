@@ -3,29 +3,34 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://drewlee.com/posts/why-pledgemaster/</loc>
+    <loc>https://drewlee.com/about/</loc>
+    <lastmod>2019-01-26T02:16:38-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://drewlee.com/posts/why-pledgemaster/</loc>
     <lastmod>2017-01-16T20:09:02-08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://drewlee.com/</loc>
+    <loc>https://drewlee.com/</loc>
+    <lastmod>2019-01-26T02:16:38-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://drewlee.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://drewlee.com/posts/</loc>
     <lastmod>2017-01-16T20:09:02-08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://drewlee.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://drewlee.com/posts/</loc>
-    <lastmod>2017-01-16T20:09:02-08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://drewlee.com/tags/</loc>
+    <loc>https://drewlee.com/tags/</loc>
     <priority>0</priority>
   </url>
   
