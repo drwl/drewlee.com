@@ -3,34 +3,44 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://drewlee.com/posts/on-rewards-cards/</loc>
-    <lastmod>2019-03-07T17:49:44-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://drewlee.com/about/</loc>
-    <lastmod>2019-01-26T02:16:38-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://drewlee.com/posts/why-pledgemaster/</loc>
-    <lastmod>2017-01-16T20:09:02-08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://drewlee.com/</loc>
-    <lastmod>2019-03-07T17:49:44-08:00</lastmod>
+    <lastmod>2019-07-21T17:50:56-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://drewlee.com/categories/</loc>
-    <priority>0</priority>
+    <loc>https://drewlee.com/talks/</loc>
+    <lastmod>2019-07-21T17:50:56-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://drewlee.com/impact/</loc>
+    <lastmod>2019-07-21T17:50:28-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://drewlee.com/2019/on-rewards-cards/</loc>
+    <lastmod>2019-03-07T17:49:44-08:00</lastmod>
   </url>
   
   <url>
     <loc>https://drewlee.com/posts/</loc>
     <lastmod>2019-03-07T17:49:44-08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://drewlee.com/2017/why-pledgemaster/</loc>
+    <lastmod>2017-01-16T20:09:02-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://drewlee.com/blurb/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://drewlee.com/categories/</loc>
     <priority>0</priority>
   </url>
   
