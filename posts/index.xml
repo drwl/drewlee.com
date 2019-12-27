@@ -5,10 +5,34 @@
     <description>Recent content in Posts on Andrew W. Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 Mar 2019 17:49:44 -0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Dec 2019 16:15:47 -0800</lastBuildDate>
     
         <atom:link href="https://drewlee.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Overfitting</title>
+      <link>https://drewlee.com/2019/overfitting/</link>
+      <pubDate>Thu, 26 Dec 2019 16:15:47 -0800</pubDate>
+      
+      <guid>https://drewlee.com/2019/overfitting/</guid>
+      <description>&lt;p&gt;“Something I want to try is to move somewhere to be alone and to work on things. All I would need is my laptop.”&lt;/p&gt;
+
+&lt;p&gt;My friend Sasa told me he was thinking about moving somewhere, to be alone and to work on personal projects. That all he needed was his laptop and the internet. This way he would be free from distractions and be able to fully focus on projects.&lt;/p&gt;
+
+&lt;p&gt;I said to try renting a place for a weekend and try that out before committing to fully moving. That way you get the experience and you&amp;rsquo;ll have a better idea of if being alone is the missing factor in working on side projects. In other words, you&amp;rsquo;ll have a better idea of if not being alone is the reason you&amp;rsquo;re not working on projects without such a drastic change. Because it&amp;rsquo;s possible that he&amp;rsquo;s wrong and being alone isn&amp;rsquo;t the sole reason, and to move seemed like overfitting for something he thinks he needs to do.&lt;/p&gt;
+
+&lt;p&gt;A while ago I was interested in doing machine learning stuff. Machine learning could be used in so many ways to do so many things and that&amp;rsquo;s what fascinated me. But instead of learning and practicing it, my first instinct was to research &amp;ldquo;what kind of computer should I build to do machine learning?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;At the time I only had a 15&amp;rdquo; MacBook Pro and I knew that it didn&amp;rsquo;t have the hardware to run really big models fast. I was obsessed with building a computer specifically built for machine learning, yet I didn&amp;rsquo;t even get to a point where my laptop&amp;rsquo;s hardware was the issue. This is overfitting.&lt;/p&gt;
+
+&lt;p&gt;I spent a lot of time researching Nvidia graphics cards because CUDA was the big thing. I looked at the differences in ram for GPUs and how it would affect the machine learning workflows I thought I would run. For example, the difference between a GTX 1080 and the GTX 980 was an astonishing 5GB of ram and that would allow me to run bigger models. I learned all these things about building computers that would work great for machine learning that I never did any machine learning.&lt;/p&gt;
+
+&lt;p&gt;So the wanting to build a dedicated computer was overfitting. Instead, I should have just done machine learning stuff on my laptop. And yes it would have been slower doing computations on a CPU but at least I would have done something. Isn&amp;rsquo;t that the important thing anyway?&lt;/p&gt;
+
+&lt;p&gt;p.s. From Wikipedia: Overfitting is &amp;ldquo;the production of an analysis that corresponds too closely or exactly to a particular set of data, and may, therefore, fail to fit additional data or predict future observations reliably&amp;rdquo;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>On Rewards Cards</title>
