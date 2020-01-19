@@ -5,10 +5,35 @@
     <description>Recent content in Posts on Andrew W. Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Dec 2019 16:15:47 -0800</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jan 2020 10:50:38 -0800</lastBuildDate>
     
         <atom:link href="https://drewlee.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Apple Watch Experiment</title>
+      <link>https://drewlee.com/2020/apple-watch-experiment/</link>
+      <pubDate>Sun, 19 Jan 2020 10:50:38 -0800</pubDate>
+      
+      <guid>https://drewlee.com/2020/apple-watch-experiment/</guid>
+      <description>&lt;p&gt;I’m always surprised when I catch myself sidetracked on my phone. I pick up my phone intending to authenticate myself for 2FA in mind. Then just moments later, I’m checking my Fantasy Basketball team or responding to text messages. I’m sure there’s a psychology phenomenon named after this. Maybe this behavior is just strongly conditioned like Pavlov’s metronome.&lt;/p&gt;
+
+&lt;p&gt;Now there’s nothing wrong with taking breaks and using the phone to relax. But I get distracted and get sidetracked. So I got an Apple Watch to see if it helps, with the goal being to improve my focus and not try to be more efficient with my time. I do many non-productive things throughout the day that it seems silly to save a few minutes at work when I’m spending hours that same day playing Dota.&lt;/p&gt;
+
+&lt;p&gt;Like an iPhone, the Apple Watch is highly customizable. I’ve seen friends with them use it as just another device with the same notifications. I didn’t want this to be a substitute for an iPhone. I wanted it to complement it. I would still have my phone, and I would check it, just less regularly. After thinking about what type of notifications I wanted on my watch, this is what I came up with:&lt;/p&gt;
+
+&lt;figure class=&#34;figure&#34;&gt;
+  &lt;img class=&#34;img-responsive&#34; src=&#34;https://drewlee.com/images/urgent-actionable-matrix.jpeg&#34; alt=&#34;2x2 Matrix with Urgent and Non-Urgent on X-axis, Actionable and Unactionable on Y-axis&#34; title=&#34;Urgent Actionable Matrix&#34; /&gt;
+  &lt;figcaption class=&#34;figure-caption text-center&#34;&gt;Urgent Actionable Matrix for Notifications&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;It’s similar to the Eisenhower Matrix of Urgent Important.&lt;/p&gt;
+
+&lt;p&gt;I wanted to see if getting an Apple Watch would decrease the number of times I get sidetracked, reduce phone usage, and improve my focus at work. I’ve had the watch for over two weeks now and things feel better. It feels like my overall screen time is down, and the number of pickups is down. Unfortunately, right now, iOS doesn’t store screen time metrics, so I’m not able to compare the past and present.&lt;/p&gt;
+
+&lt;p&gt;On a side note, I have liked that the Apple Watch encourages physical wellness, but I’ll save that for another post.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Overfitting</title>
