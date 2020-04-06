@@ -5,7 +5,7 @@
     <description>Recent content on Andrew W. Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 19 Jan 2020 10:50:38 -0800</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jul 2019 17:50:56 -0700</lastBuildDate>
     
         <atom:link href="https://drewlee.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -40,12 +40,13 @@
     </item>
     
     <item>
-      <title></title>
+      <title>Site Blurb</title>
       <link>https://drewlee.com/blurb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://drewlee.com/blurb/</guid>
-      <description>&lt;p&gt;My name is Andrew, but I also go by Drew for short.&lt;/p&gt;
+      <description>
+&lt;p&gt;My name is Andrew, but I also go by Drew for short.&lt;/p&gt;
 
 &lt;p&gt;I&#39;m currently living in San Francisco and doing software engineering at &lt;a href=&#34;https://gusto.com/about&#34;&gt;Gusto&lt;/a&gt;. We&#39;re building the people platform to empower businesses to be successful.&lt;/p&gt;
 
