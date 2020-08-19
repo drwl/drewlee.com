@@ -5,10 +5,104 @@
     <description>Recent content in Posts on Andrew W. Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Apr 2020 18:41:42 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2020 23:18:22 -0700</lastBuildDate>
     
         <atom:link href="https://drewlee.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Time Off in Covid</title>
+      <link>https://drewlee.com/2020/time-off-in-covid/</link>
+      <pubDate>Sun, 16 Aug 2020 23:18:22 -0700</pubDate>
+      
+      <guid>https://drewlee.com/2020/time-off-in-covid/</guid>
+      <description>&lt;p&gt;Monday (8/10) marked the end of my two weeks of time off. I was initially going to take the week of my birthday but ended up pushing it back further and taking an extra week off. It worked out great. The last time I took an extended amount of time away from work (extended meaning &amp;gt; 1 week) was back in September / October 2019, before COVID. With everything that has happened since then, it felt like PTO was going to be a waste.&lt;/p&gt;
+&lt;p&gt;Getting out of the house made a significant impact on me. I got exposed to new stimuli and new environments. I also took large chunks of time away from devices (i.e. laptop). While I overestimated how much I could get done, over the two weeks I:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.alltrails.com/trail/us/california/bernal-heights-park-trail&#34;&gt;Hiked Bernal Heights&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Hiked around Point Reyes&lt;/li&gt;
+&lt;li&gt;Went on a road trip, seeing and hiking in Valley of Fire, Zion National Park, and Arches National Park in Moab&lt;/li&gt;
+&lt;li&gt;Finished reading &lt;a href=&#34;https://www.goodreads.com/book/show/9915.Less_Than_Zero&#34;&gt;Less than Zero (Bret Easton Ellis)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Started going through &lt;a href=&#34;https://cbra.info/&#34;&gt;CBRA&lt;/a&gt; and made good progress&lt;/li&gt;
+&lt;li&gt;Started reading &lt;a href=&#34;https://www.goodreads.com/book/show/79352.Six_Pillars_of_Self_Esteem&#34;&gt;Six Pillars of Self-Esteem (Nathaniel Branden)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Watched two lectures of &lt;a href=&#34;https://www.youtube.com/playlist?list=PL22J3VaeABQApSdW8X71Ihe34eKN6XhCi&#34;&gt;Jordan Peterson’s Personality and Its Transformations Lectures&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Said goodbye and sent off a friend and former roommate. He left SF to go back home to Iowa.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Reflecting on these past two weeks, I’m glad I took extended time off. I believe two weeks and longer is the proper amount of time to disconnect from work and relax. And I felt fortunate that I was able to.&lt;/p&gt;
+&lt;div class=&#34;carousel&#34;&gt;
+  &lt;!-- carousel locator --&gt;
+  &lt;input class=&#34;carousel-locator&#34; id=&#34;img_pt_reyes&#34; type=&#34;radio&#34; name=&#34;carousel-radio&#34; hidden=&#34;&#34; checked=&#34;&#34;&gt;
+  &lt;input class=&#34;carousel-locator&#34; id=&#34;img_valley_of_fire_1&#34; type=&#34;radio&#34; name=&#34;carousel-radio&#34; hidden=&#34;&#34;&gt;
+  &lt;input class=&#34;carousel-locator&#34; id=&#34;img_valley_of_fire_2&#34; type=&#34;radio&#34; name=&#34;carousel-radio&#34; hidden=&#34;&#34;&gt;
+  &lt;input class=&#34;carousel-locator&#34; id=&#34;img_zion&#34; type=&#34;radio&#34; name=&#34;carousel-radio&#34; hidden=&#34;&#34;&gt;
+  &lt;input class=&#34;carousel-locator&#34; id=&#34;img_zion_angels_landing&#34; type=&#34;radio&#34; name=&#34;carousel-radio&#34; hidden=&#34;&#34;&gt;
+  &lt;input class=&#34;carousel-locator&#34; id=&#34;img_arches&#34; type=&#34;radio&#34; name=&#34;carousel-radio&#34; hidden=&#34;&#34;&gt;
+  &lt;!-- carousel container --&gt;
+  &lt;div class=&#34;carousel-container&#34;&gt;
+    &lt;!-- carousel item --&gt;
+    &lt;figure class=&#34;carousel-item&#34;&gt;
+      &lt;label class=&#34;item-prev btn btn-action btn-lg&#34; for=&#34;img_arches&#34;&gt;&lt;i class=&#34;icon icon-arrow-left&#34;&gt;&lt;/i&gt;&lt;/label&gt;
+      &lt;label class=&#34;item-next btn btn-action btn-lg&#34; for=&#34;img_valley_of_fire_1&#34;&gt;&lt;i class=&#34;icon icon-arrow-right&#34;&gt;&lt;/i&gt;&lt;/label&gt;
+      &lt;a href=&#34;IMG_0679.jpeg&#34;&gt;
+        &lt;img class=&#34;img-responsive rounded&#34; src=&#34;IMG_0679.jpeg&#34; alt=&#34;Tomales Bay in Point Reyes&#34;&gt;
+      &lt;/a&gt;
+    &lt;/figure&gt;
+    &lt;figure class=&#34;carousel-item&#34;&gt;
+      &lt;label class=&#34;item-prev btn btn-action btn-lg&#34; for=&#34;img_pt_reyes&#34;&gt;&lt;i class=&#34;icon icon-arrow-left&#34;&gt;&lt;/i&gt;&lt;/label&gt;
+      &lt;label class=&#34;item-next btn btn-action btn-lg&#34; for=&#34;img_valley_of_fire_2&#34;&gt;&lt;i class=&#34;icon icon-arrow-right&#34;&gt;&lt;/i&gt;&lt;/label&gt;
+      &lt;a href=&#34;IMG_0726.jpeg&#34;&gt;
+        &lt;img class=&#34;img-responsive rounded&#34; src=&#34;IMG_0726.jpeg&#34; alt=&#34;Valley of Fire&#34;&gt;
+      &lt;/a&gt;
+    &lt;/figure&gt;
+    &lt;figure class=&#34;carousel-item&#34;&gt;
+      &lt;label class=&#34;item-prev btn btn-action btn-lg&#34; for=&#34;img_valley_of_fire_1&#34;&gt;&lt;i class=&#34;icon icon-arrow-left&#34;&gt;&lt;/i&gt;&lt;/label&gt;
+      &lt;label class=&#34;item-next btn btn-action btn-lg&#34; for=&#34;img_zion&#34;&gt;&lt;i class=&#34;icon icon-arrow-right&#34;&gt;&lt;/i&gt;&lt;/label&gt;
+      &lt;a href=&#34;IMG_0750.jpeg&#34;&gt;
+        &lt;img class=&#34;img-responsive rounded&#34; src=&#34;IMG_0750.jpeg&#34; alt=&#34;On top of a hill at Fire Wave Trail&#34;&gt;
+      &lt;/a&gt;
+    &lt;/figure&gt;
+    &lt;figure class=&#34;carousel-item&#34;&gt;
+      &lt;label class=&#34;item-prev btn btn-action btn-lg&#34; for=&#34;img_valley_of_fire_2&#34;&gt;&lt;i class=&#34;icon icon-arrow-left&#34;&gt;&lt;/i&gt;&lt;/label&gt;
+      &lt;label class=&#34;item-next btn btn-action btn-lg&#34; for=&#34;img_zion_angels_landing&#34;&gt;&lt;i class=&#34;icon icon-arrow-right&#34;&gt;&lt;/i&gt;&lt;/label&gt;
+      &lt;a href=&#34;IMG_0758.jpeg&#34;&gt;
+        &lt;img class=&#34;img-responsive rounded&#34; src=&#34;IMG_0758.jpeg&#34; alt=&#34;Zion Overlooking Canyon&#34;&gt;
+      &lt;/a&gt;
+    &lt;/figure&gt;
+    &lt;figure class=&#34;carousel-item&#34;&gt;
+      &lt;label class=&#34;item-prev btn btn-action btn-lg&#34; for=&#34;img_zion&#34;&gt;&lt;i class=&#34;icon icon-arrow-left&#34;&gt;&lt;/i&gt;&lt;/label&gt;
+      &lt;label class=&#34;item-next btn btn-action btn-lg&#34; for=&#34;img_arches&#34;&gt;&lt;i class=&#34;icon icon-arrow-right&#34;&gt;&lt;/i&gt;&lt;/label&gt;
+      &lt;a href=&#34;IMG_0826.jpeg&#34;&gt;
+        &lt;img class=&#34;img-responsive rounded&#34; src=&#34;IMG_0826.jpeg&#34; alt=&#34;View from Angel&#39;s Landing in Zion&#34;&gt;
+      &lt;/a&gt;
+    &lt;/figure&gt;
+    &lt;figure class=&#34;carousel-item&#34;&gt;
+      &lt;label class=&#34;item-prev btn btn-action btn-lg&#34; for=&#34;img_zion_angels_landing&#34;&gt;&lt;i class=&#34;icon icon-arrow-left&#34;&gt;&lt;/i&gt;&lt;/label&gt;
+      &lt;label class=&#34;item-next btn btn-action btn-lg&#34; for=&#34;img_pt_reyes&#34;&gt;&lt;i class=&#34;icon icon-arrow-right&#34;&gt;&lt;/i&gt;&lt;/label&gt;
+      &lt;a href=&#34;IMG_0883.jpeg&#34;&gt;
+        &lt;img class=&#34;img-responsive rounded&#34; src=&#34;IMG_0883.jpeg&#34; alt=&#34;Arches National Park&#34;&gt;
+      &lt;/a&gt;
+    &lt;/figure&gt;
+  &lt;/div&gt;
+  &lt;!-- carousel navigation --&gt;
+  &lt;div class=&#34;carousel-nav&#34;&gt;
+    &lt;label class=&#34;nav-item text-hide c-hand&#34; for=&#34;img_pt_reyes&#34;&gt;Tomales Bay in Point Reyes&lt;/label&gt;
+    &lt;label class=&#34;nav-item text-hide c-hand&#34; for=&#34;img_valley_of_fire_1&#34;&gt;Valley of Fire&lt;/label&gt;
+    &lt;label class=&#34;nav-item text-hide c-hand&#34; for=&#34;img_valley_of_fire_2&#34;&gt;On top of a hill at Fire Wave Trail&lt;/label&gt;
+    &lt;label class=&#34;nav-item text-hide c-hand&#34; for=&#34;img_zion&#34;&gt;Zion Overlooking Canyon&lt;/label&gt;
+    &lt;label class=&#34;nav-item text-hide c-hand&#34; for=&#34;img_zion_angels_landing&#34;&gt;View from Angel&#39;s Landing in Zion&lt;/label&gt;
+    &lt;label class=&#34;nav-item text-hide c-hand&#34; for=&#34;img_arches&#34;&gt;Arches National Park&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;br /&gt;
+&lt;h3 id=&#34;notes-to-self-for-my-next-road-trip&#34;&gt;Notes to Self for My Next Road Trip&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;I underestimated how hot it was going to feel and how that would affect hiking. The weather reports said the temperature would be in the high 90s and 100s, and I thought it would be a minor inconvenience.&lt;/li&gt;
+&lt;li&gt;Buy the bucket hat. The Costco in Las Vegas sold bucket hats for $15.99. I regret not buying it and not having the 360° protection from the Sun.&lt;/li&gt;
+&lt;li&gt;I also overestimated how much time we spent driving. Our Airbnb by Zion was about an hour away from the park — as it was a lot cheaper. Making that trip to Zion and Back for two days meant we spent about 3.5 - 4 hours just driving.&lt;/li&gt;
+&lt;li&gt;We started our road trip by driving down to Los Angeles to pick up a friend, and I regret not flying. A friend had told me he had flown from the Bay Area to LA for cheap. Right now, Google Flights shows round trip tickets for $100 — the same cost as the gas used, and even less expensive when factoring in car depreciation and car insurance. Flying would have easily saved me 10 hours.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Greg Bauges: Developers and Depression (Talk)</title>
