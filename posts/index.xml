@@ -5,10 +5,65 @@
     <description>Recent content in Posts on Andrew W. Lee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Sep 2020 20:51:35 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 16 Sep 2020 21:45:51 -0700</lastBuildDate>
     
         <atom:link href="https://drewlee.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>RRF and YAGNI in Practice: A Lesson with Kent Beck</title>
+      <link>https://drewlee.com/2020/rrf-and-yagni-in-practice-a-lesson-with-kent-beck/</link>
+      <pubDate>Wed, 16 Sep 2020 21:45:51 -0700</pubDate>
+      
+      <guid>https://drewlee.com/2020/rrf-and-yagni-in-practice-a-lesson-with-kent-beck/</guid>
+      <description>&lt;p&gt;Kent has a framework for approaching software development. He calls it RRF, which stands for 1) make it run, 2) make it right, and then 3) make it fast. Kelly Sutton, another engineer at Gusto, does an excellent job fleshing out RRF in his post &lt;a href=&#34;https://kellysutton.com/2020/05/18/speeding-up-a-rails-continuous-integration-pipeline.html&#34;&gt;on dramatically reducing build times for CI&lt;/a&gt; (although he calls it WRF).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Make it work” means shipping something that doesn’t break. The code might be ugly and difficult to understand, but we’re delivering value to the customer and we have tests that give us confidence. Without tests, it’s hard to answer “Does this work?”&lt;/p&gt;
+&lt;p&gt;“Make it right” means that the code is maintainable and easy to change. Humans can read it, not just computers. New engineers can easily add functionality to the code. When there’s a defect, it is easy to isolate and correct.&lt;/p&gt;
+&lt;p&gt;Finally, we “make it fast.” We make the code performant. &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This framework rests on humility. How? Because we want to believe we’re smart and we are, but we’re not smart enough to solve multiple hard problems at once. When we try to, we tend to come up with inferior solutions &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; — or in my case, generate unnecessary stress.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;I had just joined a new team that was working on launching a new product. There was a lot of ground to cover, and each engineer was working on independent projects. Being new, I wanted to make an impression on my team and manager.&lt;/p&gt;
+&lt;p&gt;My first project was to create a system that shared log files with a third party partner so their systems could ingest the data. The team lead had come up with a technical spec, and it was my responsibility to come up with a design and implement it. The system design I proposed was accepted, and so I got to work.&lt;/p&gt;
+&lt;p&gt;It was easy enough to create the ActiveRecord models and migrations. But when it came to implementing the classes and jobs for generating the log files, I was stuck, just sitting at my desk looking at an empty file in RubyMine. At a high level, I knew how it should work as well as the inputs and outputs. But I was frozen, trying to think through how actually to implement it most optimally. I’d start out writing a few lines, ask myself if it was optimal, then delete it and start over.&lt;/p&gt;
+&lt;p&gt;And so I kept thinking. I kept trying to find a way to implement this: so that it would be optimized for performance from the get-go, that the classes and APIs made sense, and that it ran. But I was blocked.&lt;/p&gt;
+&lt;p&gt;I met with Kent for a coaching session. I told him about the project and what I was trying to do and where I was stuck — wanting to implement a system that worked, and that was also performant.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;And he said “YAGNI” &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;br /&gt;
+“What?”&lt;br /&gt;
+“You’re not gonna need it — the performant stuff.”&lt;br /&gt;
+“But Kent…”&lt;br /&gt;
+“When you need it, you can come back to it. The requirements will have changed. So right now, you aren’t gonna need it.”&lt;br /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So first, I set out to get it running and only focusing on that. It was challenging in the beginning, because it felt counter-intuitive to work in this way. But then I got it running. After that, I tidied it up and refactored it to look clean. Then I was done, even though at the time, it still felt incomplete.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p&gt;I always have trouble remembering what the letters mean in RRF/WRF. So I came up with my own mnemonic: the 3 Cs. It embodies the same things in Kent and Kelly’s RRF/WRF, but in my own words. So the 3 Cs are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Make it Correct: it runs, takes in the right inputs, and gives the correct outputs.&lt;/li&gt;
+&lt;li&gt;Make it Clean: easy to read and easy to extend code.&lt;/li&gt;
+&lt;li&gt;Make it Quick-er.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In hindsight, it’s funny that I stressed over this as much as I did, because today, most of the “non-performant” code is still there. It’s clean code, and it works. I think it was a combination of ego and imposter syndrome that made me want to impress my team and try and do all 3 Cs in a single (pull request|change list|diff). But I now realize that was the wrong approach.&lt;/p&gt;
+&lt;p&gt;In practice, I’m usually able to get the first 2 Cs in a pull request. I’m able to get more done when I focus on fewer things. It sounds like common sense when writing it out, but it’s hard to practice in the moment. Occasionally, I’ll see optimizations and get those in. But I don’t force it. “Making it Quick-er” without the need is premature optimization &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;, and there are usually other higher priority things to do.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Thanks to Reece Boyd, Guilherme Albertini, Kent Beck, and Amy Shu for reading initial drafts and providing feedback.&lt;/em&gt;&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://kellysutton.com/2020/05/18/speeding-up-a-rails-continuous-integration-pipeline.html&#34;&gt;https://kellysutton.com/2020/05/18/speeding-up-a-rails-continuous-integration-pipeline.html&lt;/a&gt; &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;It’s completely possible there are talented people that can do RRF in one fell swoop and not generate inferior solutions. However, I’d wager the average engineer cannot. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Martin Fowler has a great piece on YAGNI: &lt;a href=&#34;https://www.martinfowler.com/bliki/Yagni.html&#34;&gt;https://www.martinfowler.com/bliki/Yagni.html&lt;/a&gt; &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://wiki.c2.com/?PrematureOptimization&#34;&gt;https://wiki.c2.com/?PrematureOptimization&lt;/a&gt; &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
     
     <item>
       <title>The Awesome Winter</title>

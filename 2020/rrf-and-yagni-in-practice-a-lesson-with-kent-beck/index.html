@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>RRF and YAGNI in Practice: A Lesson with Kent Beck – Andrew W. Lee</title>
+	
+	<meta name="description" content="RRF is a framework for software development coined by Kent Beck.">
+	<meta name="image" content="">
+	
+	<meta itemprop="name" content="RRF and YAGNI in Practice: A Lesson with Kent Beck">
+	<meta itemprop="description" content="RRF is a framework for software development coined by Kent Beck.">
+	<meta itemprop="image" content="">
+	
+	<meta name="og:title" content="RRF and YAGNI in Practice: A Lesson with Kent Beck">
+	<meta name="og:description" content="RRF is a framework for software development coined by Kent Beck.">
+	
+	<meta name="og:url" content="https://drewlee.com/2020/rrf-and-yagni-in-practice-a-lesson-with-kent-beck/">
+	<meta name="og:site_name" content="RRF and YAGNI in Practice: A Lesson with Kent Beck">
+	<meta name="og:type" content="article">
+	
+	<meta name="article:tag" content="">
+
+	<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+	<link rel="stylesheet" type="text/css" href="https://drewlee.com/css/style.css">
+	
+	
+</head>
+
+<body>
+<div class="container grid-md"> 
+
+<header class="navbar container my-2">
+    <section class="navbar-section">
+        
+        <a href="https://drewlee.com/" class="navbar-brand mr-2">Andrew W. Lee</a>
+    </section>
+
+    <section class="navbar-section">
+        <a href="https://drewlee.com/" class="btn mx-1">Posts</a>
+        
+        
+        
+        <a href="https://drewlee.com/impact/" class="btn mx-1">Impact List</a>
+        
+        
+        <a href="https://drewlee.com/talks/" class="btn mx-1">Talks</a>
+        
+    </section>
+</header>
+
+<div class="container content">
+    <h1>RRF and YAGNI in Practice: A Lesson with Kent Beck</h1>
+    <p><p>Kent has a framework for approaching software development. He calls it RRF, which stands for 1) make it run, 2) make it right, and then 3) make it fast. Kelly Sutton, another engineer at Gusto, does an excellent job fleshing out RRF in his post <a href="https://kellysutton.com/2020/05/18/speeding-up-a-rails-continuous-integration-pipeline.html">on dramatically reducing build times for CI</a> (although he calls it WRF).</p>
+<blockquote>
+<p>“Make it work” means shipping something that doesn’t break. The code might be ugly and difficult to understand, but we’re delivering value to the customer and we have tests that give us confidence. Without tests, it’s hard to answer “Does this work?”</p>
+<p>“Make it right” means that the code is maintainable and easy to change. Humans can read it, not just computers. New engineers can easily add functionality to the code. When there’s a defect, it is easy to isolate and correct.</p>
+<p>Finally, we “make it fast.” We make the code performant. <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+</blockquote>
+<p>This framework rests on humility. How? Because we want to believe we’re smart and we are, but we’re not smart enough to solve multiple hard problems at once. When we try to, we tend to come up with inferior solutions <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> — or in my case, generate unnecessary stress.<br /><br /></p>
+<p>I had just joined a new team that was working on launching a new product. There was a lot of ground to cover, and each engineer was working on independent projects. Being new, I wanted to make an impression on my team and manager.</p>
+<p>My first project was to create a system that shared log files with a third party partner so their systems could ingest the data. The team lead had come up with a technical spec, and it was my responsibility to come up with a design and implement it. The system design I proposed was accepted, and so I got to work.</p>
+<p>It was easy enough to create the ActiveRecord models and migrations. But when it came to implementing the classes and jobs for generating the log files, I was stuck, just sitting at my desk looking at an empty file in RubyMine. At a high level, I knew how it should work as well as the inputs and outputs. But I was frozen, trying to think through how actually to implement it most optimally. I’d start out writing a few lines, ask myself if it was optimal, then delete it and start over.</p>
+<p>And so I kept thinking. I kept trying to find a way to implement this: so that it would be optimized for performance from the get-go, that the classes and APIs made sense, and that it ran. But I was blocked.</p>
+<p>I met with Kent for a coaching session. I told him about the project and what I was trying to do and where I was stuck — wanting to implement a system that worked, and that was also performant.</p>
+<blockquote>
+<p>And he said “YAGNI” <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup><br />
+“What?”<br />
+“You’re not gonna need it — the performant stuff.”<br />
+“But Kent…”<br />
+“When you need it, you can come back to it. The requirements will have changed. So right now, you aren’t gonna need it.”<br /></p>
+</blockquote>
+<p>So first, I set out to get it running and only focusing on that. It was challenging in the beginning, because it felt counter-intuitive to work in this way. But then I got it running. After that, I tidied it up and refactored it to look clean. Then I was done, even though at the time, it still felt incomplete.<br /><br /></p>
+<p>I always have trouble remembering what the letters mean in RRF/WRF. So I came up with my own mnemonic: the 3 Cs. It embodies the same things in Kent and Kelly’s RRF/WRF, but in my own words. So the 3 Cs are:</p>
+<ol>
+<li>Make it Correct: it runs, takes in the right inputs, and gives the correct outputs.</li>
+<li>Make it Clean: easy to read and easy to extend code.</li>
+<li>Make it Quick-er.</li>
+</ol>
+<p>In hindsight, it’s funny that I stressed over this as much as I did, because today, most of the “non-performant” code is still there. It’s clean code, and it works. I think it was a combination of ego and imposter syndrome that made me want to impress my team and try and do all 3 Cs in a single (pull request|change list|diff). But I now realize that was the wrong approach.</p>
+<p>In practice, I’m usually able to get the first 2 Cs in a pull request. I’m able to get more done when I focus on fewer things. It sounds like common sense when writing it out, but it’s hard to practice in the moment. Occasionally, I’ll see optimizations and get those in. But I don’t force it. “Making it Quick-er” without the need is premature optimization <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>, and there are usually other higher priority things to do.</p>
+<p><em>Thanks to Reece Boyd, Guilherme Albertini, Kent Beck, and Amy Shu for reading initial drafts and providing feedback.</em></p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><a href="https://kellysutton.com/2020/05/18/speeding-up-a-rails-continuous-integration-pipeline.html">https://kellysutton.com/2020/05/18/speeding-up-a-rails-continuous-integration-pipeline.html</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>It’s completely possible there are talented people that can do RRF in one fell swoop and not generate inferior solutions. However, I’d wager the average engineer cannot. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>Martin Fowler has a great piece on YAGNI: <a href="https://www.martinfowler.com/bliki/Yagni.html">https://www.martinfowler.com/bliki/Yagni.html</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p><a href="https://wiki.c2.com/?PrematureOptimization">https://wiki.c2.com/?PrematureOptimization</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</p>
+</div>
+
+<div class="container">
+    <br />
+    
+</div>
+
+</div> 
+</body>
+</html>
